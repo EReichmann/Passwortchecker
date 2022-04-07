@@ -44,7 +44,15 @@ function ersterTest() {
             console.log("Passwort enthält keine Großbuchstaben")
         }
 
-
+if(gross && klein && zahlen && laenge === true) {
+    document.getElementById("bewertung").innerHTML = "Dein Passwort ist sicher!"
+    document.getElementById("bewertung").style.color = "green"
+    document.getElementById("bewertungBild").image = "img/Häkchen-richtig-Daumen-hoch.webp"
+}else{
+    document.getElementById("bewertung").innerHTML = "Dein Passwort ist unsicher!"
+    document.getElementById("bewertung").style.color = "red"
+    document.getElementById("bewertungBild").image = "img/falsch-22537660.jpg"
+}
 
 }
 
